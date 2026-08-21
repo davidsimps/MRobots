@@ -34,7 +34,7 @@ public sealed class RobotSimulation
 
     private static string[] SplitValues(string line, int expectedCount)
     {
-        var values = line.Split(' ', StringSplitOptions.RemoveEmptyEntries);
+        var values = line.Split((char[]?)null, StringSplitOptions.RemoveEmptyEntries);
 
         return values.Length == expectedCount
             ? values

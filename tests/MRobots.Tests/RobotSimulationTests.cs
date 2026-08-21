@@ -28,4 +28,22 @@ public sealed class RobotSimulationTests
 
         Assert.Equal(expected, output.ToString());
     }
+
+    [Fact]
+    public void Run_TabSeparatedGridAndRobotValues_WritesExpectedOutput()
+    {
+        var input = string.Join(
+            Environment.NewLine,
+            "5\t3",
+            "1\t1\tE",
+            "F");
+        var output = new StringWriter();
+        var processor = new RobotCommandProcessor(
+            [new LeftCommand(), new RightCommand(), new ForwardCommand()]);
+        var simulation = new RobotSimulation(processor);
+
+        simulation.Run(new StringReader(input), output);
+
+        Assert.Equal($"2 1 E{Environment.NewLine}", output.ToString());
+    }
 }
