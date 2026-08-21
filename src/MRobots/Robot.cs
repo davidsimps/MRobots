@@ -12,7 +12,11 @@ public sealed class Robot
 
     public Orientation Orientation { get; private set; }
 
+    public bool IsLost { get; private set; }
+
     public void MoveTo(Position position) => Position = position;
 
     public void TurnTo(Orientation orientation) => Orientation = orientation;
+
+    public void MarkLost() => IsLost = true;
 }

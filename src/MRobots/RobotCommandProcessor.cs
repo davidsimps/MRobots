@@ -13,6 +13,11 @@ public sealed class RobotCommandProcessor
     {
         foreach (var instruction in instructions)
         {
+            if (robot.IsLost)
+            {
+                break;
+            }
+
             if (!_commands.TryGetValue(instruction, out var command))
             {
                 throw new ArgumentException(

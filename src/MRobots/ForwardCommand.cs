@@ -16,6 +16,18 @@ public sealed class ForwardCommand : IRobotCommand
             _ => throw new InvalidOperationException("Unsupported orientation.")
         };
 
-        robot.MoveTo(proposed);
+        if (grid.Contains(proposed))
+        {
+            robot.MoveTo(proposed);
+            return;
+        }
+
+        if (grid.HasScent(current))
+        {
+            return;
+        }
+
+        grid.RecordScent(current);
+        robot.MarkLost();
     }
 }
