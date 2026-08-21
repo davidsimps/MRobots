@@ -27,7 +27,7 @@ FRRFLLFFRRFLL
 LLFFFLFLFL
 ```
 
-The program reads from standard input until EOF. For manual input, press `Ctrl+Z` then Enter on Windows, or `Ctrl+D` on macOS/Linux.
+The program reads from standard input until EOF. On Windows, after entering the final instruction line, press Enter, then press `Ctrl+Z` on a new empty line and press Enter again. On macOS/Linux, press `Ctrl+D`.
 
 The example produces:
 
