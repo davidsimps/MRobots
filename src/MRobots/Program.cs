@@ -1,2 +1,7 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+using MRobots;
+
+var commandProcessor = new RobotCommandProcessor(
+    [new LeftCommand(), new RightCommand(), new ForwardCommand()]);
+var simulation = new RobotSimulation(commandProcessor);
+
+simulation.Run(Console.In, Console.Out);
