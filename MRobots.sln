@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{3A5E8744-8B46-466F-9459-E76B22CCE3E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MRobots", "src\MRobots\MRobots.csproj", "{6B0FA8D2-F173-44EE-904B-B44B0C5153BA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{2F5A908D-D6AB-452A-AB86-B1477FFAEBF2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MRobots.Tests", "tests\MRobots.Tests\MRobots.Tests.csproj", "{CDC02806-07A8-44BE-96BB-76D20920534F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6B0FA8D2-F173-44EE-904B-B44B0C5153BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B0FA8D2-F173-44EE-904B-B44B0C5153BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B0FA8D2-F173-44EE-904B-B44B0C5153BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B0FA8D2-F173-44EE-904B-B44B0C5153BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDC02806-07A8-44BE-96BB-76D20920534F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDC02806-07A8-44BE-96BB-76D20920534F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDC02806-07A8-44BE-96BB-76D20920534F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDC02806-07A8-44BE-96BB-76D20920534F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6B0FA8D2-F173-44EE-904B-B44B0C5153BA} = {3A5E8744-8B46-466F-9459-E76B22CCE3E8}
+		{CDC02806-07A8-44BE-96BB-76D20920534F} = {2F5A908D-D6AB-452A-AB86-B1477FFAEBF2}
+	EndGlobalSection
+EndGlobal
